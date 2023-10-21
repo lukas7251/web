@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Web</title>
+
+    <link rel="icon" type="image/x-icon" href="https://www.svgrepo.com/show/222737/leaf.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <script src="scripts.js"></script>
+
+    <nav>
+      <span class="arrow"><span></span><span></span></span>
+      <div class="submenu">
+        <a href="#">To top</a>
+        <a href="https://github.com/lukas7251/web/blob/main/README.md" target="_blank">GitHub</a>
+        <a id="dark" onclick="toggleDarkMode()">Dark</a>
+      </div>
+    </nav>
+
+    <div class="timer" id="timer">
+      <p>You have been here for <br /><span id="counter">0</span> <span id="counterUnit">seconds</span></p>
+      <span class="close-button" id="close-button">&times;</span>
+    </div>
+
+    <main>
+
+      <header>
+        <h1 style="transform: scale(2);">👋</h1>
+      </header>
+
+      <article>
+        <h2>Welcome to my Website</h2>
+        <p>
+          This page was created as a course project for the Web Programming Basics Course.<br />
+          I've tried to implement everything on the assessment criteria page on this website.
+        </p>
+      </article>
+
+      <div class="divider"></div>
+
+      <form class="form-group">
+        <h3>Form Example</h3>
+        <label for="userInput">Type something to return it as an alert</label><br />
+        <input type="text" id="userInput" placeholder="Type something" /><br />
+        <button type="button" id="submitbtn" onclick="showAlert()">Submit</button>
+      </form>
+
+      <div class="divider"></div>
+
+      <h3>Example of a table element</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Example 1</td>
+            <td>
+              <div class="description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio aut reiciendis dolore
+                necessitatibus commodi a itaque quae, vel beatae minus!
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Example 2</td>
+            <td>
+              <div class="description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, minima? Suscipit maxime minus omnis,
+                dolor, doloremque assumenda consectetur eos debitis soluta molestias cupiditate expedita qui consequatur
+                vitae deserunt est odio!
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Example 3</td>
+            <td>
+              <div class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nisi magnam dolore accusantium laudantium
+                maxime saepe. Voluptates voluptas voluptate perspiciatis, assumenda possimus dolorem at eum beatae
+                blanditiis quod aliquid provident?
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="divider"></div>
+
+      <div class="gallery">
+        <h2>Gallery</h2>
+        <h3>Implementation of responsive multimedia gallery using advanced layout techniques.</h3>
+        <p>
+          Photos from
+          <a href="https://www.pexels.com" style="text-decoration: none" target="_blank">pexels.com</a>
+        </p>
+        <div class="grid-container">
+          <div class="grid-item">
+            <a href="https://www.pexels.com/photo/15632959/" target="_blank">
+              <img src="https://images.pexels.com/photos/15632959/pexels-photo-15632959.jpeg?auto=compress" />
+            </a>
+          </div>
+          <div class="grid-item tall">
+            <a href="https://www.pexels.com/photo/1100043/" target="_blank">
+              <img src="https://images.pexels.com/photos/1100043/pexels-photo-1100043.jpeg?auto=compress" />
+            </a>
+          </div>
+          <div class="grid-item">
+            <a href="https://www.pexels.com/photo/1441932/" target="_blank">
+              <img src="https://images.pexels.com/photos/1441932/pexels-photo-1441932.jpeg?auto=compress" />
+            </a>
+          </div>
+          <div class="grid-item wide">
+            <a href="https://www.pexels.com/photo/10635435/" target="_blank">
+              <img src="https://images.pexels.com/photos/10635435/pexels-photo-10635435.jpeg?auto=compress" />
+            </a>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="colors">
+          <h2>Color indentifier</h2>
+          <p>This page utilizes <a href="https://www.thecolorapi.com">thecolorapi.com</a>
+            to retrieve information, including the name, of the color of your choice, and
+            it generates an monochrome color scheme based on it.</p>
+
+          <h1>Color Scheme Viewer</h1>
+          <p>Select a color:</p>
+
+          <div id="selector">
+            <input type="color" value="#b99788" id="color-input" />
+            <button id="fetch-colors">Fetch Colors</button>
+          </div>
+
+          <div id="color-container"></div>
+
+        </div>
+
+        <footer>
+          <p>2023 Lukas</p>
+        </footer>
+
+    </main>
+  </body>
+
+</html>
